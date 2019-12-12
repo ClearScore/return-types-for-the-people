@@ -1,0 +1,28 @@
+---
+swagger: "2.0"
+info:
+  title: "Lightning"
+  description: "Method signatures and stuff"
+consumes:
+  - application/json
+produces:
+  - application/json
+definitions:
+  model.Model.Registration:
+    properties:
+      name:
+        type: "string"
+        description: "Name"
+        example: "Dara"
+      age:
+        type: "integer"
+        description: "Age"
+        example: 34
+      email:
+        type: "string"
+        description: "Email"
+        example: "dara@cs.com"
+      password:
+        type: "string"
+        description: "Password"
+        example: "Pa55word"

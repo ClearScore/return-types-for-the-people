@@ -1,0 +1,49 @@
+
+###
+#  summary: Register to become a member
+#  description: v1
+#  parameters:
+#    - name: body
+#      schema:
+#        $ref: '#/definitions/model.Model.Registration'
+###
+POST        /v1/register                controllers.Controller.v1
+
+###
+#  summary: Register to become a member
+#  description: v2
+#  parameters:
+#    - name: body
+#      schema:
+#        $ref: '#/definitions/model.Model.Registration'
+###
+POST        /v2/register                controllers.Controller.v2
+
+###
+#  summary: Register to become a member
+#  description: v3
+#  parameters:
+#    - name: body
+#      schema:
+#        $ref: '#/definitions/model.Model.Registration'
+###
+POST        /v3/register                 controllers.Controller.v3
+
+###
+#  summary: Register to become a member
+#  description: v4
+#  parameters:
+#    - name: body
+#      schema:
+#        $ref: '#/definitions/model.Model.Registration'
+###
+POST        /v4/register                 controllers.Controller.v4
+
+
+
+### NoDocs ###
+GET         /docs/swagger-ui/*file      controllers.Assets.at(path:String="/public/lib/swagger-ui", file:String)
+### NoDocs ###
+GET         /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+### NoDocs ###
+GET         /                           controllers.SwaggerController.index
