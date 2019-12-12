@@ -31,6 +31,6 @@ object Register {
     } yield MemberAccount(validatedName, Random.nextInt(10000), ZonedDateTime.now.plusYears(1))
 
   def apply(registration: Registration): Future[Either[Error, MemberAccount]] =
-    Future.fromTry(Try(validate(registration.name, registration.password, registration.email, registration.age))))
+    Future(validate(registration.name, registration.password, registration.email, registration.age))
 
 }

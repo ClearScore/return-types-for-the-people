@@ -1,12 +1,10 @@
-To compile
+#Return Types
 
-`sbt compile`
+Rough demo project used for a lightning talk.
 
-To run
+To compile: `sbt compile`
 
-`sbt run`
+To run: `sbt run`
 
-Open in browser
-
-`localhost:9000`
+Open in browser: `localhost:9000`
 
